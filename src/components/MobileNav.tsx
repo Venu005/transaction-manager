@@ -24,12 +24,12 @@ const MobileNav = () => {
             src="/icons/hamburger.svg"
             width={36}
             height={36}
-            className="cursor-pointer sm:hidden"
+            className="cursor-pointer sm:hidden dark:invert"
           />
         </SheetTrigger>
         <SheetContent className="border-none bg-dark-1" side="left">
           <Link href="/" className="flex z-40 font-semibold">
-            Spend<span className="text-orange-600">Savvy</span>
+            Spend<span className="text-blue-500">Savvy</span>
           </Link>
           <div className="flex h-[calc(100vh-72px)] flex-col justify-between overflow-y-auto">
             <SheetClose asChild>
@@ -45,6 +45,7 @@ const MobileNav = () => {
                           "flex gap-4 items-center p-4 rounded-lg w-full max-w-60",
                           {
                             "bg-gray-100": isActive,
+                            "dark:bg-blue-500": isActive,
                             "text-black": isActive,
                           }
                         )}
@@ -54,6 +55,7 @@ const MobileNav = () => {
                           alt="link-image"
                           width={30}
                           height={30}
+                          className="dark:invert"
                         />
                         <p className="font-semibold"> {link.label}</p>
                       </Link>

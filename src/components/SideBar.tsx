@@ -29,9 +29,10 @@ const Sidebar = () => {
                 alt="link-image"
                 width={24}
                 height={24}
+                className="dark:invert"
               />
               <p
-                className="text-lg font-semibold max-lg:hidden dark:invert'
+                className="text-lg font-semibold max-lg:hidden'
               "
               >
                 {" "}
