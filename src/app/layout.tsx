@@ -33,15 +33,9 @@ export default function RootLayout({
           >
             <main className=" relative grainy-light  min-h-[calc(100vh-3.5rem-1px)] grainy-dark">
               <NavBar />
-              <div className="flex">
-                <div className="sticky top-0 h-screen">
-                  <Sidebar />
-                </div>
 
-                <section className="flex min-h-screen flex-1 flex-col px-6 pb-6 pt-28 max-md:pb-14 sm:px-14">
-                  <div className="w-full">{children}</div>
-                </section>
-              </div>
+              <div className="w-full">{children}</div>
+
               {/* <Footer /> */}
             </main>
             <Toaster />
